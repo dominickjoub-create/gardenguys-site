@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Garden Guys | Landscaping & Garden Services in Weltevreden Park, Roodepoort</title>
+  <meta name="description" content="The Garden Guys — professional landscaping, garden services and outdoor spaces in Weltevreden Park, Roodepoort. Garden maintenance, tree felling, planting, irrigation & pool care. Free quote on WhatsApp." />
+  <meta name="theme-color" content="#1f3d1f" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="The Garden Guys | Landscaping & Garden Services" />
+  <meta property="og:description" content="Beautiful gardens, cared for properly. Serving Weltevreden Park, Roodepoort & surrounds." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon: leaf mark -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f3d1f'/%3E%3Cpath d='M16 25c-6-1-9-6-9-12 6 0 12 3 12 10' fill='%23a7c94a'/%3E%3Cpath d='M16 25c5-1 8-5 8-10-5 0-10 2-10 8' fill='%235a9e3f'/%3E%3Crect x='15.2' y='16' width='1.6' height='9' rx='.8' fill='%23244a1f'/%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Local business structured data (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LandscapingBusiness",
+    "name": "The Garden Guys",
+    "description": "Landscaping, garden services and outdoor spaces in Weltevreden Park, Roodepoort.",
+    "telephone": "+27683598558",
+    "areaServed": "Weltevreden Park, Roodepoort, Gauteng",
+    "address": { "@type": "PostalAddress", "addressLocality": "Weltevreden Park", "addressRegion": "Gauteng", "addressCountry": "ZA" },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "07:00", "closes": "17:00"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="The Garden Guys home">
+        <img src="images/logo.png" alt="The Garden Guys" />
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#work">Our Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">How It Works</a>
+        <a href="#area">Areas</a>
+        <a href="#faq">FAQ</a>
+        <a href="#quote" class="nav__cta">Get a Quote</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO (scroll-expand) ===== -->
+  <section class="xhero" id="top">
+    <noscript><style>
+      .xhero__track{height:100vh}
+      .xhero__media{width:100%!important;height:100%!important;border-radius:0!important}
+      .xhero__mediascrim{opacity:1!important}
+      .xhero__bg,.xhero__bgscrim,.xhero__titles,.xhero__hint{display:none}
+      .xhero__reveal{opacity:1!important;pointer-events:auto!important}
+    </style></noscript>
+    <div class="xhero__track" id="xheroTrack">
+      <div class="xhero__pin" id="xheroPin">
+        <!-- Background image: fades out as you scroll -->
+        <div class="xhero__bg" aria-hidden="true"></div>
+        <div class="xhero__bgscrim" aria-hidden="true"></div>
+
+        <!-- Expanding media = current hero photo (swap for video/3D later) -->
+        <div class="xhero__media" id="xheroMedia" aria-hidden="true">
+          <div class="xhero__mediascrim"></div>
+        </div>
+
+        <!-- Split title that drifts apart while the media expands -->
+        <div class="xhero__titles" id="xheroTitles">
+          <span class="xhero__word xhero__word--l">The Garden</span>
+          <span class="xhero__word xhero__word--r">Guys</span>
+        </div>
+
+        <!-- Content revealed once fully expanded -->
+        <div class="xhero__reveal" id="xheroReveal">
+          <p class="xhero__eyebrow">Weltevreden Park · Roodepoort</p>
+          <h1 class="xhero__title">Beautiful gardens, cared for properly.</h1>
+          <p class="xhero__sub">Landscaping, garden services and outdoor spaces —
+            designed, planted and maintained by The Garden Guys.</p>
+          <div class="xhero__cta">
+            <a href="#quote" class="btn btn--primary">Get a Free Quote</a>
+            <a href="#work" class="btn btn--ghost">See our work</a>
+          </div>
+        </div>
+
+        <p class="xhero__hint" id="xheroHint"><span>Scroll</span><i></i></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BEFORE / AFTER ===== -->
+  <section class="section work" id="work">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">The transformation</p>
+        <h2>From overgrown to outstanding</h2>
+        <p class="lead">Drag the handle to see the difference we make. Real gardens, real results.</p>
+      </div>
+
+      <div class="ba reveal" id="beforeAfter">
+        <div class="ba__frame">
+          <img class="ba__img ba__after" src="images/lawn-after.jpg" alt="Garden after The Garden Guys service" draggable="false" />
+          <div class="ba__before-wrap" id="baBefore">
+            <img class="ba__img" src="images/lawn-before.jpg" alt="Garden before service" draggable="false" />
+          </div>
+          <span class="ba__tag ba__tag--before">Before</span>
+          <span class="ba__tag ba__tag--after">After</span>
+          <div class="ba__handle" id="baHandle" role="slider" aria-label="Reveal before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" tabindex="0">
+            <span class="ba__line"></span>
+            <span class="ba__grip"><i></i><i></i></span>
+          </div>
+        </div>
+        <p class="ba__hint">More before &amp; afters coming soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="services">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">What we do</p>
+        <h2>Everything your garden needs</h2>
+        <p class="lead">For homes and offices. One trusted team for the whole outdoor space.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__mark" aria-hidden="true">✿</div>
+          <h3>Garden Maintenance</h3>
+          <ul>
+            <li>Garden service — weekly, bi-monthly or monthly</li>
+            <li>Garden clean-ups</li>
+            <li>Lawn care</li>
+            <li>Weed control</li>
+            <li>Refuse removal</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__mark" aria-hidden="true">❀</div>
+          <h3>Planting &amp; Design</h3>
+          <ul>
+            <li>Landscape design — homes &amp; corporate</li>
+            <li>Flowerbeds — design, create, plant</li>
+            <li>Vegetable beds — design, create, plant</li>
+            <li>Planting</li>
+            <li>Composting</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__mark" aria-hidden="true">❦</div>
+          <h3>Trees &amp; Structures</h3>
+          <ul>
+            <li>Tree felling &amp; trimming</li>
+            <li>Steps &amp; pathways</li>
+            <li>Gutter clearing &amp; cleaning</li>
+            <li>Basic painting &amp; sanding</li>
+          </ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__mark" aria-hidden="true">❧</div>
+          <h3>Water &amp; Pool</h3>
+          <ul>
+            <li>Pool maintenance</li>
+            <li>Irrigation repairs</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section process" id="process">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">Simple &amp; easy</p>
+        <h2>How it works</h2>
+        <p class="lead">No forms to chase, no waiting. Every job is priced on a free consultation.</p>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step__num">1</span>
+          <h3>Tell us what you need</h3>
+          <p>Pick your services and send them straight to us on WhatsApp — it takes a minute.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step__num">2</span>
+          <h3>Free consult &amp; quote</h3>
+          <p>We look at yard size, trees and detail, then give you a clear, fair quote.</p>
+        </div>
+        <div class="step reveal">
+          <span class="step__num">3</span>
+          <h3>We get to work</h3>
+          <p>Reliable, tidy and on schedule — we leave your outdoor space looking its best.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICE AREA ===== -->
+  <section class="section area" id="area">
+    <div class="wrap area__grid">
+      <div class="reveal">
+        <p class="eyebrow">Where we work</p>
+        <h2>Proudly serving the West Rand</h2>
+        <p class="lead">Based in Weltevreden Park, we look after gardens across Roodepoort and
+          the surrounding suburbs. Not sure if we cover you? Just ask.</p>
+        <a href="#quote" class="btn btn--primary">Check your area</a>
+      </div>
+      <ul class="area__list reveal">
+        <li>Weltevreden Park</li>
+        <li>Constantia Kloof</li>
+        <li>Little Falls</li>
+        <li>Roodepoort</li>
+        <li>Wilgeheuwel</li>
+        <li>Radiokop</li>
+        <li>Honeydew</li>
+        <li>Ruimsig</li>
+        <li>Florida</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===== QUOTE FORM ===== -->
+  <section class="section quote" id="quote">
+    <div class="wrap quote__grid">
+      <div class="quote__intro reveal">
+        <p class="eyebrow">Free quote</p>
+        <h2>Get your quote on WhatsApp</h2>
+        <p class="lead">Choose what you need below and we'll build a WhatsApp message for you.
+          Hit send and we'll reply with a quote — quick and easy.</p>
+        <ul class="quote__points">
+          <li>No obligation, no call-out fee to enquire</li>
+          <li>Homes &amp; offices welcome</li>
+          <li>Mon–Sat, 7:00–17:00</li>
+        </ul>
+      </div>
+
+      <form class="quote__form reveal" id="quoteForm" novalidate>
+        <fieldset>
+          <legend><span class="step-dot">1</span> Which services do you need?</legend>
+          <div class="chips" id="serviceChips">
+            <label class="chip"><input type="checkbox" data-key="garden" /><span>Garden service</span></label>
+            <label class="chip"><input type="checkbox" data-key="cleanup" /><span>Clean-up</span></label>
+            <label class="chip"><input type="checkbox" data-key="lawn" /><span>Lawn care</span></label>
+            <label class="chip"><input type="checkbox" data-key="tree" /><span>Tree felling</span></label>
+            <label class="chip"><input type="checkbox" data-key="design" /><span>Landscape design</span></label>
+            <label class="chip"><input type="checkbox" data-key="flowerbeds" /><span>Flowerbeds</span></label>
+            <label class="chip"><input type="checkbox" data-key="veg" /><span>Veg beds</span></label>
+            <label class="chip"><input type="checkbox" data-key="irrigation" /><span>Irrigation</span></label>
+            <label class="chip"><input type="checkbox" data-key="pool" /><span>Pool</span></label>
+            <label class="chip"><input type="checkbox" data-key="gutters" /><span>Gutters</span></label>
+            <label class="chip"><input type="checkbox" data-key="pathways" /><span>Pathways</span></label>
+            <label class="chip"><input type="checkbox" data-key="composting" /><span>Composting</span></label>
+          </div>
+        </fieldset>
+
+        <!-- Per-service questions injected here based on selection -->
+        <div class="dynamic" id="dynamicFields" hidden>
+          <p class="dynamic__title"><span class="step-dot">2</span> A few details, so we can quote accurately</p>
+          <div id="dynamicFieldsInner"></div>
+        </div>
+
+        <fieldset>
+          <legend><span class="step-dot">3</span> Your details</legend>
+          <div class="field-row">
+            <label class="field">
+              <span>Your name</span>
+              <input type="text" id="qName" placeholder="e.g. John" autocomplete="name" />
+            </label>
+            <label class="field">
+              <span>Suburb</span>
+              <input type="text" id="qSuburb" placeholder="e.g. Weltevreden Park" />
+            </label>
+          </div>
+          <label class="field">
+            <span>Property type</span>
+            <select id="qType">
+              <option value="Home">Home</option>
+              <option value="Office / corporate">Office / corporate</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Anything else? (optional)</span>
+            <textarea id="qNotes" rows="3" placeholder="e.g. access is around the back, best time to visit…"></textarea>
+          </label>
+        </fieldset>
+
+        <button type="submit" class="btn btn--whatsapp btn--full">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.86 9.86 0 004.73 1.2h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.82 9.82 0 0012.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.37-.5.05-1.13.07-1.83-.11-.42-.13-.96-.31-1.66-.61-2.92-1.26-4.82-4.2-4.97-4.4-.14-.2-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.82 2.01.89 2.16.07.14.12.31.02.5-.09.2-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.29.72 1.18 1.54 1.92 1.06.94 1.95 1.24 2.24 1.38.28.14.45.12.61-.07.17-.2.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.67.79 1.96.93.29.14.48.21.55.33.07.11.07.68-.17 1.36z"/></svg>
+          Send my request on WhatsApp
+        </button>
+        <p class="quote__note">Opens WhatsApp with your details ready to send. WhatsApp only · +27&nbsp;68&nbsp;359&nbsp;8558</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section faq" id="faq">
+    <div class="wrap wrap--narrow">
+      <div class="section__head reveal">
+        <p class="eyebrow">Good to know</p>
+        <h2>Frequently asked</h2>
+      </div>
+      <div class="accordion">
+        <details class="reveal">
+          <summary>How does quoting work — why are no prices listed?</summary>
+          <p>Every garden is different. Prices depend on yard size, the number of trees, metres of
+            pathway and how much work is involved, so we quote per job after a quick free consultation.
+            Send us your details on WhatsApp and we'll come back with a fair price.</p>
+        </details>
+        <details class="reveal">
+          <summary>Do you remove the refuse and garden waste?</summary>
+          <p>Yes — refuse removal is part of what we do. We leave your space clean and tidy when we're done.</p>
+        </details>
+        <details class="reveal">
+          <summary>Do you bring your own equipment?</summary>
+          <p>Absolutely. Our team arrives fully equipped for the job, from garden services through to
+            tree felling and irrigation repairs.</p>
+        </details>
+        <details class="reveal">
+          <summary>Which areas do you cover?</summary>
+          <p>We're based in Weltevreden Park and work throughout Roodepoort and the surrounding West Rand
+            suburbs. If you're nearby and not listed, just ask — we most likely cover you.</p>
+        </details>
+        <details class="reveal">
+          <summary>Do you work at offices and businesses too?</summary>
+          <p>Yes. We look after both homes and corporate outdoor spaces, including regular scheduled
+            garden services and landscape design.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <img src="images/logo.png" alt="The Garden Guys" />
+        <p>Landscaping · Gardens · Outdoor Spaces</p>
+      </div>
+      <div class="footer__col">
+        <h4>Contact</h4>
+        <a class="footer__wa" href="https://wa.me/27683598558" target="_blank" rel="noopener">WhatsApp: 068 359 8558</a>
+        <p>WhatsApp only</p>
+      </div>
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <p>Monday – Saturday<br />7:00 – 17:00</p>
+        <p>Sunday closed</p>
+      </div>
+      <div class="footer__col">
+        <h4>Area</h4>
+        <p>Weltevreden Park,<br />Roodepoort &amp; surrounds</p>
+      </div>
+    </div>
+    <div class="footer__base">
+      <p>© <span id="year"></span> The Garden Guys. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a class="fab" href="https://wa.me/27683598558" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path fill="currentColor" d="M12.04 2c-5.46 0-9.9 4.44-9.9 9.9 0 1.75.46 3.45 1.32 4.95L2 22l5.3-1.38a9.86 9.86 0 004.73 1.2h.01c5.46 0 9.9-4.44 9.9-9.9 0-2.64-1.03-5.13-2.9-7A9.82 9.82 0 0012.04 2zm5.8 14.13c-.24.68-1.42 1.32-1.95 1.37-.5.05-1.13.07-1.83-.11-.42-.13-.96-.31-1.66-.61-2.92-1.26-4.82-4.2-4.97-4.4-.14-.2-1.18-1.57-1.18-3s.75-2.13 1.02-2.42c.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.42-.07.65.5.24.58.82 2.01.89 2.16.07.14.12.31.02.5-.09.2-.14.31-.28.48-.14.17-.29.37-.42.5-.14.14-.28.29-.12.57.16.29.72 1.18 1.54 1.92 1.06.94 1.95 1.24 2.24 1.38.28.14.45.12.61-.07.17-.2.71-.83.9-1.11.19-.29.38-.24.64-.14.26.09 1.67.79 1.96.93.29.14.48.21.55.33.07.11.07.68-.17 1.36z"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
