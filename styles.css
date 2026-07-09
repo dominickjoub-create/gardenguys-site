@@ -411,10 +411,12 @@ p { margin: 0; }
   position: relative; z-index: 5; display: flex; flex-direction: column;
   align-items: center; gap: 4px; text-align: center; color: #fff;
   mix-blend-mode: difference; pointer-events: none;
+  filter: drop-shadow(0 2px 18px rgba(0,0,0,.35));
   opacity: clamp(0, calc(1 - (var(--p, 0) - 0.72) * 3.6), 1);
 }
-.xhero__word { font-family: var(--serif); font-weight: 500; line-height: 1;
-  font-size: clamp(2.4rem, 8vw, 6rem); }
+.xhero__word { font-family: var(--serif); font-weight: 600; line-height: 1;
+  letter-spacing: .01em; font-size: clamp(2.4rem, 8vw, 6rem);
+  text-shadow: 0 1px 24px rgba(255,255,255,.35); }
 .xhero__word--l { transform: translateX(calc(var(--p, 0) * -52vw)); }
 .xhero__word--r { transform: translateX(calc(var(--p, 0) * 52vw)); }
 /* revealed content once expanded */
