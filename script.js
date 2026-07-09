@@ -51,12 +51,12 @@
     reveals.forEach(function (el) { el.classList.add("in"); });
   }
 
-  /* ---------- Before / After comparison slider ---------- */
-  var ba = document.getElementById("beforeAfter");
-  if (ba) {
+  /* ---------- Before / After comparison sliders ---------- */
+  function initBeforeAfter(ba) {
     var frame = ba.querySelector(".ba__frame");
-    var beforeWrap = document.getElementById("baBefore");
-    var handle = document.getElementById("baHandle");
+    var beforeWrap = ba.querySelector(".ba__before-wrap");
+    var handle = ba.querySelector(".ba__handle");
+    if (!frame || !beforeWrap || !handle) return;
     var dragging = false;
 
     function setPos(pct) {
@@ -108,6 +108,7 @@
 
     setPos(50);
   }
+  Array.prototype.forEach.call(document.querySelectorAll(".ba"), initBeforeAfter);
 
   /* ---------- Smart quote form -> WhatsApp deep link ----------
      Each selected service reveals its own follow-up questions so the
