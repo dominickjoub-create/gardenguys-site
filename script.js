@@ -4,7 +4,7 @@
 (function () {
   "use strict";
 
-  var WHATSAPP_NUMBER = "27683598558"; // +27 68 359 8558
+  var WHATSAPP_NUMBER = "27789505955"; // +27 78 950 5955
 
   /* ---------- Year ---------- */
   var yearEl = document.getElementById("year");
