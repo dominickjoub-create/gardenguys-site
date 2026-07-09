@@ -246,7 +246,16 @@
       if (notes) lines.push("*Notes:* " + notes);
 
       var url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(lines.join("\n"));
-      window.open(url, "_blank", "noopener");
+      // Anchor click opens a real new tab (and the WhatsApp app on mobile)
+      // reliably — window.open with a features string opens a popup window
+      // on desktop and is more likely to be blocked.
+      var a = document.createElement("a");
+      a.href = url;
+      a.target = "_blank";
+      a.rel = "noopener";
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
     });
   }
 })();
