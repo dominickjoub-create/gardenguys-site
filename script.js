@@ -1,5 +1,5 @@
 /* ===================================================================
-   The Garden Guys — interactions
+   The Garden Guyz — interactions
    =================================================================== */
 (function () {
   "use strict";
@@ -112,7 +112,7 @@
 
   /* ---------- Smart quote form -> WhatsApp deep link ----------
      Each selected service reveals its own follow-up questions so the
-     enquiry carries exactly what The Garden Guys needs to price the job. */
+     enquiry carries exactly what The Garden Guyz needs to price the job. */
   var SIZE = ["Small (up to 200m²)", "Medium (200–600m²)", "Large (600m²+)"];
 
   var SERVICES = {
@@ -211,7 +211,7 @@
     form.addEventListener("submit", function (e) {
       e.preventDefault();
 
-      var lines = ["Hi The Garden Guys! I'd like a quote please.", ""];
+      var lines = ["Hi The Garden Guyz! I'd like a quote please.", ""];
       var chosen = [];
 
       chipInputs.forEach(function (chip) {
